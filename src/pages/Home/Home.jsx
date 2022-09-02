@@ -80,6 +80,7 @@ const Home = () => {
               </LikeCommentSend>
               <VscSave />
             </Icons>
+            
           </Comments>
         </Post>
       </Posts>
