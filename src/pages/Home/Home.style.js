@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
   width: 100%;
+  background-color: #191919;
 `;
 
 export const Stories = styled.div`
-  width: 100%;
   height: 90px;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@ export const MyStory = styled.div``;
 export const MyStoryBox = styled.div`
   width: 20px;
   height: 20px;
-  background-color: blue;
+  background-color: white;
   border-radius: 50%;
   margin-top: -25px;
   margin-left: 50px;
@@ -25,48 +25,52 @@ export const MyStoryBox = styled.div`
   align-items: center;
   justify-content: center;
 
-  img {
-    border: none;
-  }
-
   svg {
     font-size: 12px;
-    color: white;
+    color: #191919;
   }
 `;
 export const Image = styled.img`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 3px solid grey;
+  border: 3px solid white;
 `;
 
 export const Posts = styled.div`
   width: 100%;
-  height: 600px;
-  background: yellow;
   margin-top: 10px;
   border-top: 2px solid grey;
+  padding: 10px 0px;
 `;
 export const Post = styled.div`
   width: 100%;
   height: 500px;
-  background-color: red;
+  color: white;
 `;
 
 export const Name = styled.div`
   width: 100%;
   height: 12%;
-  background-color: yellow;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 10px;
   box-sizing: border-box;
-
   div {
     display: flex;
     gap: 10px;
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      h3 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
   }
   img {
     width: 50px;
@@ -87,6 +91,13 @@ export const PostImage = styled.img`
 export const Comments = styled.div`
   width: 100%;
   height: 23%;
+  box-sizing: border-box;
+
+  h3 {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
 `;
 
 export const Icons = styled.div`
@@ -102,4 +113,29 @@ export const Icons = styled.div`
 export const LikeCommentSend = styled.div`
   display: flex;
   gap: 5px;
+`;
+
+export const Likes = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  p {
+    margin-left: 40px;
+  }
+`;
+
+export const Images = styled.div`
+  img {
+    width: 28px;
+    border-radius: 50%;
+
+    &:nth-child(2) {
+      position: absolute;
+      margin-left: -12px;
+    }
+    &:nth-child(3) {
+      position: absolute;
+      margin-left: 3px;
+    }
+  }
 `;
