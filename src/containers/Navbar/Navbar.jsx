@@ -1,19 +1,14 @@
 import React from "react";
-import { Icons, Image, Logo, NavbarWrapper } from "./Navbar.style";
-import { FaPlus, FaHeart } from "react-icons/fa";
+import { Image, Logo, NavbarWrapper } from "./Navbar.style";
 import logo from "../../assets/img/logo.jpg";
-
+import { FiSend } from "react-icons/fi";
 const Navbar = () => {
   return (
     <NavbarWrapper>
       <Logo>
         <Image src={logo} />
+        <FiSend />
       </Logo>
-      <Icons>
-        <FaPlus />
-        <FaHeart />
-        <FaHeart />
-      </Icons>
     </NavbarWrapper>
   );
 };

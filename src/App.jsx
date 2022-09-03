@@ -6,10 +6,10 @@ import LoRe from "./pages/LoginRegister/LoRe";
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <Home /> */}
+      <Navbar />
+      <Home />
       {/* <LoRe /> */}
-      <Login />
+      {/* <Login /> */}
     </div>
   );
 }

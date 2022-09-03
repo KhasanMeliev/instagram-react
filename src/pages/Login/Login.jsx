@@ -2,14 +2,14 @@ import React from "react";
 import logo from "../../assets/img/logo.jpg";
 import {
   Button,
+  FacebookButton,
   Form,
   Image,
   Input,
   InputWrapper,
   LoginWrapper,
   OR,
-  With,
-  WithFacebook,
+  SignUp,
 } from "./Login.style";
 import { FaFacebook } from "react-icons/fa";
 
@@ -22,25 +22,25 @@ const Login = () => {
           <Input type="text" placeholder="Phone number, username or email" />
           <Input type="password" placeholder="Password" />
         </InputWrapper>
-        <p>Forgot Password?</p>
         <Button>Log In</Button>
-      </Form>
-
-      <With>
-        <WithFacebook>
-          <FaFacebook />
-          <p>Log In With Facebook</p>
-        </WithFacebook>
-
+        <p>
+          Forgot your login details? <span>Get help logging in</span>
+        </p>
         <OR>
           <hr />
-          <p>OR</p>
+          <h3>OR</h3>
           <hr />
         </OR>
-        <h3>
-          Don't have an account? <span>Sign Up</span>
-        </h3>
-      </With>
+        <FacebookButton>
+          <FaFacebook /> Continue as coding_khasan
+        </FacebookButton>
+      </Form>
+
+      <SignUp>
+        <p>
+          Don't have an account? <span>Sign Up.</span>
+        </p>
+      </SignUp>
     </LoginWrapper>
   );
 };
