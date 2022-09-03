@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Logo, NavbarWrapper } from "./Navbar.style";
+import { Box, Image, Logo, Message, NavbarWrapper } from "./Navbar.style";
 import logo from "../../assets/img/logo.jpg";
 import { FiSend } from "react-icons/fi";
 const Navbar = () => {
@@ -7,7 +7,10 @@ const Navbar = () => {
     <NavbarWrapper>
       <Logo>
         <Image src={logo} />
-        <FiSend />
+        <Message>
+          <FiSend />
+          <Box>9</Box>
+        </Message>
       </Logo>
     </NavbarWrapper>
   );

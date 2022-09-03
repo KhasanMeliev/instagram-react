@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const HomeWrapper = styled.div`
   width: 100%;
   background-color: #191919;
+
+  @media (min-width: 350px) {
+    width: 420px;
+  }
 `;
 
 export const Stories = styled.div`
@@ -13,7 +17,9 @@ export const Stories = styled.div`
   gap: 10px;
   padding: 0px 5px;
 `;
-export const MyStory = styled.div``;
+export const MyStory = styled.div`
+  position: relative;
+`;
 export const MyStoryBox = styled.div`
   width: 20px;
   height: 20px;
@@ -42,6 +48,9 @@ export const Posts = styled.div`
   margin-top: 10px;
   border-top: 2px solid grey;
   padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
 export const Post = styled.div`
   width: 100%;
@@ -51,7 +60,7 @@ export const Post = styled.div`
 
 export const Name = styled.div`
   width: 100%;
-  height: 12%;
+  height: 11%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,15 +75,18 @@ export const Name = styled.div`
       gap: 0px;
       h3 {
         margin: 0;
+        font-size: 16px;
+        font-weight: 450;
       }
       p {
         margin: 0;
+        font-size: 13px;
       }
     }
   }
   img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
   }
 
@@ -85,19 +97,14 @@ export const Name = styled.div`
 
 export const PostImage = styled.img`
   width: 100%;
-  height: 65%;
+  height: 60%;
 `;
 
 export const Comments = styled.div`
   width: 100%;
   height: 23%;
   box-sizing: border-box;
-
-  h3 {
-    font-size: 17px;
-    margin-top: 0px;
-    margin-left: 10px;
-  }
+  padding: 0 10px;
 `;
 
 export const Icons = styled.div`
@@ -105,8 +112,7 @@ export const Icons = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10px;
-  font-size: 30px;
+  font-size: 28px;
   box-sizing: border-box;
 `;
 
@@ -118,24 +124,46 @@ export const LikeCommentSend = styled.div`
 export const Likes = styled.div`
   display: flex;
   align-items: center;
-  padding: 0px 10px;
+  margin-top: 7px;
   p {
-    margin-left: 40px;
+    margin: 0;
+    font-size: 16px;
+    margin-left: 10px;
+    color: rgb(208, 212, 219);
+    span {
+      color: white;
+      font-weight: 400;
+    }
   }
 `;
 
 export const Images = styled.div`
   img {
-    width: 28px;
+    width: 23px;
     border-radius: 50%;
-
-    &:nth-child(2) {
-      position: absolute;
-      margin-left: -12px;
-    }
-    &:nth-child(3) {
-      position: absolute;
-      margin-left: 3px;
-    }
   }
+`;
+
+export const Description = styled.h2`
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  word-spacing: 0.1;
+  margin-top: 5px;
+  span {
+    font-weight: 500;
+  }
+`;
+
+export const ViewComments = styled.h3`
+  margin: 0;
+  font-size: 17px;
+  font-weight: 450;
+`;
+
+export const PostDate = styled.p`
+  font-size: 14px;
+  font-weight: 450;
+  margin: 0;
+  margin-top: 5px;
 `;
