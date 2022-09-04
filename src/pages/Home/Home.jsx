@@ -41,26 +41,7 @@ const Home = () => {
         {stories.map((story) => (
           <>
             <Image src={story.picture} alt="story" />
-            {/* <Image
-              src="https://avatars.githubusercontent.com/khasanmeliev"
-              alt="story"
-            />
-            <Image
-              src="https://avatars.githubusercontent.com/khasanmeliev"
-              alt="story"
-            />
-            <Image
-              src="https://avatars.githubusercontent.com/khasanmeliev"
-              alt="story"
-            />
-            <Image
-              src="https://avatars.githubusercontent.com/khasanmeliev"
-              alt="story"
-            />
-            <Image
-              src="https://avatars.githubusercontent.com/khasanmeliev"
-              alt="story"
-            /> */}
+            
           </>
         ))}
       </Stories>
