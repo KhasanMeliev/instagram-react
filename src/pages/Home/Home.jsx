@@ -25,6 +25,7 @@ import { FiSend } from "react-icons/fi";
 import { VscSave } from "react-icons/vsc";
 import posts from "../../mocks/posts";
 import stories from "../../mocks/stories";
+
 const Home = () => {
   return (
     <HomeWrapper>
@@ -87,6 +88,7 @@ const Home = () => {
         ))}
       </Posts>
     </HomeWrapper>
+    
   );
 };
 
