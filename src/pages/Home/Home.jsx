@@ -89,6 +89,7 @@ const Home = () => {
       </Posts>
     </HomeWrapper>
     
+    
   );
 };
 

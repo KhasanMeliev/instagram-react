@@ -9,7 +9,6 @@ const Navbar = () => {
         <Image src={logo} />
         <Message>
           <FiSend />
-
           <Box>9</Box>
         </Message>
       </Logo>
