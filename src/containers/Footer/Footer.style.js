@@ -13,6 +13,7 @@ export const FooterWrapper = styled.div`
 
   svg {
     font-size: 26px;
+    
     color: white;
 
     &:active {
