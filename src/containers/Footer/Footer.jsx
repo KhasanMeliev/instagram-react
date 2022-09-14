@@ -5,6 +5,7 @@ import { AiOutlineHome, AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 const Footer = () => {
   return (
+    
     <FooterWrapper>
       <AiOutlineHome />
       <AiOutlineSearch />
