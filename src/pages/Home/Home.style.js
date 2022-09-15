@@ -47,10 +47,11 @@ export const Posts = styled.div`
   width: 100%;
   margin-top: 10px;
   border-top: 2px solid grey;
-  padding: 10px 0px;
+  padding: 10px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 `;
 export const Post = styled.div`
   width: 100%;
