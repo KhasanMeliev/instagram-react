@@ -7,7 +7,7 @@ export const NavbarWrapper = styled.div`
   background-color: #000;
   color: white;
   @media (min-width: 350px) {
-    width: 420px;
+    width: 100%;
   }
 `;
 export const Logo = styled.div`

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LoginWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #000;
   display: flex;
   align-items: center;
@@ -20,8 +20,7 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0px 0px;
-  margin-top: 50px;
+  margin-top: 30px;
 
   p {
     color: rgb(129, 130, 122);
