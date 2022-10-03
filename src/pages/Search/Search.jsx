@@ -1,10 +1,17 @@
+import { Text } from "@mantine/core";
 import React from "react";
-import { SearchInput, Wrapper } from "./Search.style";
+import { BsArrowLeft } from "react-icons/bs";
+import { Chats, Header, Wrapper } from "./Search.style";
 
 const Search = () => {
   return (
     <Wrapper>
-      <SearchInput></SearchInput>
+      <Header>
+        <BsArrowLeft />
+        <Text>coding_khasan </Text>
+        
+      </Header>
+      <Chats></Chats>
     </Wrapper>
   );
 };

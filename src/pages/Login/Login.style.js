@@ -2,13 +2,18 @@ import styled from "styled-components";
 
 export const LoginWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+  input {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border: none;
+  }
 `;
 
 export const Image = styled.img`
@@ -16,19 +21,10 @@ export const Image = styled.img`
 `;
 export const Form = styled.form`
   width: 90%;
-  height: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
-
-  p {
-    color: rgb(129, 130, 122);
-    font-size: 11px;
-    span {
-      color: white;
-    }
-  }
+  gap: 15px;
 `;
 
 export const InputWrapper = styled.div`
@@ -36,30 +32,7 @@ export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-`;
-
-export const Input = styled.input`
-  width: 100%;
-  height: 35px;
-  border: none;
-  border-radius: 2px;
-  background-color: #191919;
-  color: white;
-  outline: none;
-  text-indent: 5px;
-`;
-
-export const Button = styled.button`
-  width: 95%;
-  height: 35px;
-  background-color: rgb(31, 40, 153);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 17px;
-  margin-top: 18px;
-  margin-left: 2px;
-  opacity: 0.4;
+  margin-top: 20px;
 `;
 
 export const OR = styled.div`
@@ -76,55 +49,16 @@ export const OR = styled.div`
   }
 `;
 
-export const FacebookButton = styled.button`
-  width: 95%;
-  height: 40px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(31, 85, 233, 1) 0%,
-    rgba(2, 42, 95, 1) 0%,
-    rgba(2, 39, 91, 1) 0%,
-    rgba(2, 37, 88, 1) 0%,
-    rgba(4, 35, 120, 1) 0%,
-    rgba(3, 116, 198, 1) 0%,
-    rgba(3, 116, 198, 1) 26%,
-    rgba(17, 144, 237, 1) 100%
-  );
-
-  color: white;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  font-size: 15px;
-  gap: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    font-size: 25px;
-  }
-`;
-
 export const SignUp = styled.div`
   width: 100%;
-  height: 60px;
+  height: 40px;
   border-top: 1px solid rgb(129, 130, 122);
   color: white;
-  position: sticky;
-  position: fixed;
-  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  p {
-    color: rgb(129, 130, 122);
-    font-size: 13px;
-    span {
-      color: white;
-    }
-  }
+  color: rgb(129, 130, 122);
+  font-size: 15px;
+  position: fixed;
+  bottom: 0;
 `;

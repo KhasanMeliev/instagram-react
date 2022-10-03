@@ -75,7 +75,7 @@ const Home = () => {
                   <img src={post.post_pic} alt="postPicture" />
                 </Images>
                 <p>
-                  liked by <span>coding_khasan</span> and {post.likes} others
+                  liked by <span>alex</span> and {post.likes} others
                 </p>
               </Likes>
               <Description>

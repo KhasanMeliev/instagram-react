@@ -50,8 +50,6 @@ export const Posts = styled.div`
   padding: 10px 0px 50px 0px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-
 `;
 export const Post = styled.div`
   width: 100%;
