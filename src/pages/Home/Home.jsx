@@ -42,7 +42,6 @@ const Home = () => {
         {stories.map((story) => (
           <>
             <Image src={story.picture} alt="story" />
-            
           </>
         ))}
       </Stories>
@@ -52,7 +51,7 @@ const Home = () => {
           <Post>
             <Name>
               <div>
-                <img src={post.profile_pic} />
+                <img src={post.profile_pic} alt="profile_picgi" />
                 <div>
                   <h3>{post.profile_name}</h3>
                   <p>{post.location}</p>

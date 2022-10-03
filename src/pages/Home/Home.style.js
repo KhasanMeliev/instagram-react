@@ -36,6 +36,7 @@ export const MyStoryBox = styled.div`
     color: #191919;
   }
 `;
+
 export const Image = styled.img`
   width: 60px;
   height: 60px;
