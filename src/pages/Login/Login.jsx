@@ -8,7 +8,7 @@ import {
   OR,
   SignUp,
 } from "./Login.style";
-import { Button, Input, PasswordInput, Text, TextInput } from "@mantine/core";
+import { Button, Input, PasswordInput, Text } from "@mantine/core";
 import { IconBrandFacebook } from "@tabler/icons";
 import { Controller, useForm } from "react-hook-form";
 
