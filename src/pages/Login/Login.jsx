@@ -20,8 +20,8 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = () => {
+    alert("This account is not registered");
   };
   const [passwordShown, setPasswordShown] = useState(false);
 
