@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/logo.jpg";
 import {
   Form,
@@ -8,9 +8,10 @@ import {
   OR,
   SignUp,
 } from "./Register.style";
-import { Anchor, Button, Input, PasswordInput, Text } from "@mantine/core";
-import { IconBrandFacebook } from "@tabler/icons";
+import { Button, Input, Text } from "@mantine/core";
+import { IconBrandFacebook, IconLock } from "@tabler/icons";
 import { Controller, useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const {
@@ -23,6 +24,8 @@ const Register = () => {
   const onSubmit = (data) => {
     console.log(data);
   };
+
+  const [passwordShown, setPasswordShown] = useState(false);
 
   return (
     <LoginWrapper>
@@ -72,17 +75,22 @@ const Register = () => {
             name="name"
             control={control}
             render={(...field) => (
-              <PasswordInput
+              <Input
                 {...field}
                 {...register("password")}
                 placeholder="Password"
                 error={errors.password?.message}
                 autoComplete="off"
+                type={passwordShown ? "text" : "password"}
+                icon={<IconLock />}
+                onClick={() => setPasswordShown(!passwordShown)}
               />
             )}
           />
         </InputWrapper>
-        <Button type="submit">Sign Up</Button>
+        <Link to="/home">
+          <Button type="submit">Sign Up</Button>
+        </Link>
         <OR>
           <hr />
           <h3>OR</h3>
@@ -99,7 +107,7 @@ const Register = () => {
       </Form>
       <SignUp>
         <Text>
-          Already have an account? <Anchor href=''>Log In.</Anchor>
+          Already have an account? <Link to="/login">Log In.</Link>
         </Text>
       </SignUp>
     </LoginWrapper>

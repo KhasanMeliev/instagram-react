@@ -11,11 +11,13 @@ export const Wrapper = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   gap: 50px;
   padding: 50px 0px;
+
+  button {
+    width: 100%;
+  }
 `;
 
 export const Image = styled.img`
   width: 210px;
   color: white;
 `;
-
-

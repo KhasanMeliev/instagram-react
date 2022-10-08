@@ -6,6 +6,8 @@ import Navbar from "./containers/Navbar/Navbar";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Home from "./pages/Home/Home";
+import LoRe from "./pages/LoginRegister/LoRe";
+
 const Main = () => (
   <>
     <Navbar />
@@ -17,10 +19,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/home" element={<Main />} />
+        <Route path="/" element={<LoRe />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        {/* <Route path="/search" element={<Search />} /> */}
       </Routes>
     </>
   );

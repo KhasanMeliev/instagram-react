@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/logo.jpg";
 import {
   Form,
@@ -8,8 +8,8 @@ import {
   OR,
   SignUp,
 } from "./Login.style";
-import { Button, Input, PasswordInput, Text } from "@mantine/core";
-import { IconBrandFacebook } from "@tabler/icons";
+import { Anchor, Button, Input, Text } from "@mantine/core";
+import { IconBrandFacebook, IconLock } from "@tabler/icons";
 import { Controller, useForm } from "react-hook-form";
 
 const Login = () => {
@@ -23,6 +23,7 @@ const Login = () => {
   const onSubmit = (data) => {
     console.log(data);
   };
+  const [passwordShown, setPasswordShown] = useState(false);
 
   return (
     <LoginWrapper>
@@ -46,12 +47,15 @@ const Login = () => {
             name="name"
             control={control}
             render={(...field) => (
-              <PasswordInput
+              <Input
                 {...field}
                 {...register("password")}
                 placeholder="Password"
                 error={errors.password?.message}
                 autoComplete="off"
+                type={passwordShown ? "text" : "password"}
+                icon={<IconLock />}
+                onClick={() => setPasswordShown(!passwordShown)}
               />
             )}
           />
@@ -76,7 +80,7 @@ const Login = () => {
       </Form>
       <SignUp>
         <Text>
-          Don't have an account? <span>Sign Up.</span>
+          Don't have an account? <Anchor href="/register">Sign Up.</Anchor>
         </Text>
       </SignUp>
     </LoginWrapper>
